@@ -1,0 +1,50 @@
+{
+  "aid": "toss",
+  "name": "Toss Tech Blog",
+  "url": "https://toss.tech",
+  "description": "Engineering blog from Toss (Viva Republica), covering topics in fintech, mobile, AI, and platform engineering.",
+  "rss": null,
+  "lastFetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "빠르게 움직이는 조직에서, TAM은 어떻게 문제를 해결할까?",
+      "titleEn": "How does TAM solve problems in fast-moving organizations?",
+      "url": "https://toss.tech/article/tam-connect-2025",
+      "author": "송혜정",
+      "category": "Engineering",
+      "pubDate": null
+    },
+    {
+      "title": "얼굴 인식의 역사와 페이스페이의 미래",
+      "titleEn": "History of face recognition and the future of FacePay",
+      "url": "https://toss.tech/article/history-of-face-recognition-facepay",
+      "author": "토스 페이스모델링팀",
+      "category": "Engineering",
+      "pubDate": null
+    },
+    {
+      "title": "Skill 품질 관리를 위한 Rubric 설계와 시스템 구현",
+      "titleEn": "Rubric design and system implementation for Skill quality management",
+      "url": "https://toss.tech/article/skill-quality-rubric",
+      "author": "조민규",
+      "category": "Engineering",
+      "pubDate": null
+    },
+    {
+      "title": "토스팀이 AI 파도를 마주하는 방법: AI Surf Day",
+      "titleEn": "How the Toss team faces the AI wave: AI Surf Day",
+      "url": "https://toss.tech/article/ai-surf-day",
+      "author": "신유라",
+      "category": "Engineering",
+      "pubDate": null
+    },
+    {
+      "title": "Cross Functional 기술 문제 풀기 위한 역량 성장 Tip",
+      "titleEn": "Skills for solving cross-functional technical problems",
+      "url": "https://toss.tech/article/cross-functional-tpm-tip",
+      "author": "이의철",
+      "category": "Engineering",
+      "pubDate": null
+    }
+  ]
+}

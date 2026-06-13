@@ -1,0 +1,52 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Toss (Viva Republica)",
+  "alternateName": "Toss",
+  "url": "https://toss.im",
+  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "description": "Toss is a Korean financial super-app operated by Viva Republica that provides REST APIs for payments, banking, credit scoring, identity verification, and financial services across the Toss ecosystem, serving over 30 million registered users across South Korea.",
+  "sameAs": [
+    "https://github.com/tosspayments",
+    "https://github.com/toss",
+    "https://www.linkedin.com/company/viva-republica",
+    "https://x.com/toss_im",
+    "https://toss.tech"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "developer support",
+    "email": "support@tosspayments.com",
+    "url": "https://docs.tosspayments.com/en"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Toss API Products",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Toss Payments API",
+        "description": "REST API for processing payments, authorizations, cancellations, and refunds through the Toss Payments platform. Supports card, virtual account, mobile phone, bank transfer, and digital wallet payment methods.",
+        "url": "https://docs.tosspayments.com/en/api-guide"
+      },
+      {
+        "@type": "Offer",
+        "name": "Toss Pay API",
+        "description": "Legacy REST API for Toss Pay payment transactions, merchant approval flows, refunds, and payment status checks.",
+        "url": "https://tossdev.github.io/api.html"
+      },
+      {
+        "@type": "Offer",
+        "name": "Toss Payments Webhooks",
+        "description": "Event-driven webhook system for receiving real-time notifications on payment status changes, virtual account deposits, cancellations, and marketplace payout results.",
+        "url": "https://docs.tosspayments.com/en/webhooks"
+      },
+      {
+        "@type": "Offer",
+        "name": "Toss Payments Payouts API",
+        "description": "API for marketplace and platform operators to disburse funds to registered sellers, supporting seller registration, payout requests, and event-driven payout status updates.",
+        "url": "https://docs.tosspayments.com/en/integration-payouts"
+      }
+    ]
+  }
+}
