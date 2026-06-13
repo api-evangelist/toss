@@ -1,0 +1,52 @@
+name: Toss Plans and Pricing
+description: Pricing and plan information for Toss Payments API. Toss Payments operates on a merchant agreement model with transaction-based fees. Specific rate cards are negotiated per merchant and not publicly published; the following reflects publicly available general information.
+url: https://docs.tosspayments.com/en/overview
+plans:
+
+  - name: Merchant Agreement (Standard)
+    description: Default plan for merchants integrating Toss Payments. Pricing is agreement-based and varies by transaction volume, payment method, and merchant category.
+    pricing_model: transaction-fee
+    currency: KRW
+    features:
+      - Payment window integration (hosted and direct)
+      - Card payments (domestic and international)
+      - Virtual account payments
+      - Mobile phone payments
+      - Bank transfers
+      - TossPay digital wallet
+      - NaverPay, KakaoPay, SamsungPay wallets
+      - Gift certificate payments
+      - Webhook notifications
+      - Sandbox / test environment
+      - SDKs for iOS, Android, JavaScript
+      - Payment cancellation and partial refunds
+      - Interest-free installment plans
+      - Admin dashboard
+    notes:
+      - Transaction fee percentage negotiated per merchant category
+      - International card processing includes 1% international brand fee plus USD 0.50 per transaction (indicative, subject to agreement)
+      - Test keys provided free of charge (test_sk / test_gsk prefix)
+      - Production keys issued after merchant contract execution
+      - Contact support@tosspayments.com or 1544-7772 for pricing details
+
+  - name: BrandPay Add-on
+    description: White-label pay experience allowing merchants to offer a branded checkout flow with saved payment methods.
+    pricing_model: agreement-based
+    features:
+      - Branded payment interface
+      - Saved customer payment methods
+      - METHOD_UPDATED and CUSTOMER_STATUS_CHANGED webhooks
+      - Separate merchant agreement required
+
+  - name: Payouts (Seller Disbursement)
+    description: Marketplace and platform payout capabilities to disburse funds to registered sellers.
+    pricing_model: agreement-based
+    features:
+      - Seller registration and management
+      - Payout request API
+      - payout.changed and seller.changed webhooks
+      - Separate contract required
+
+notes:
+  - Toss Payments pricing is not publicly listed; merchants must register at developers.tosspayments.com and complete a business verification to receive a rate card.
+  - The consumer-facing Toss app (toss.im) uses a separate commercial model from Toss Payments merchant APIs.

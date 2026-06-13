@@ -1,0 +1,90 @@
+name: Toss Rate Limits
+description: Rate limiting and operational constraints for the Toss Payments API and Toss Pay API. Toss does not publicly document hard rate limit numbers; the following captures known operational constraints and retry behaviors from official documentation.
+url: https://docs.tosspayments.com/en/api-guide
+
+environments:
+  - name: Test (Sandbox)
+    base_url: https://api.tosspayments.com
+    key_prefix: test_sk / test_gsk
+    notes:
+      - Free access during development
+      - Sandbox environment available at developers.tosspayments.com/sandbox
+      - No production transactions processed
+
+  - name: Production (Live)
+    base_url: https://api.tosspayments.com
+    key_prefix: live_sk / live_gsk
+    notes:
+      - Requires signed merchant agreement
+      - TLS v1.2 or higher mandatory
+      - HTTPS required for all endpoints
+
+authentication:
+  method: HTTP Basic Auth
+  encoding: Base64
+  format: "Base64(secretKey + ':')"
+  header: Authorization
+  notes:
+    - Secret keys must not be exposed in browser or client-side code
+    - Server-to-server calls only
+    - Test and production keys are separate
+
+idempotency:
+  supported: true
+  header: Idempotency-Key
+  max_length: 300 characters
+  validity_period: 15 days
+  notes:
+    - Unique random value recommended per request
+    - Used to safely retry failed requests
+
+webhooks:
+  retry_policy:
+    max_retries: 7
+    intervals_minutes: [1, 4, 16, 64, 256, 1024, 4096]
+    success_condition: HTTP 200 response from receiver endpoint
+  event_types:
+    - PAYMENT_STATUS_CHANGED
+    - DEPOSIT_CALLBACK
+    - CANCEL_STATUS_CHANGED
+    - METHOD_UPDATED
+    - CUSTOMER_STATUS_CHANGED
+    - payout.changed
+    - seller.changed
+
+toss_pay_api:
+  base_url: https://pay.toss.im/api/v2
+  tls_requirement: TLS v1.2+
+  iframe_support: false
+  endpoints:
+    - path: /payments
+      method: POST
+      description: Create a payment transaction
+    - path: /execute
+      method: POST
+      description: Merchant approval of completed authentication
+    - path: /refunds
+      method: POST
+      description: Process full or partial refunds
+    - path: /status
+      method: POST
+      description: Check payment transaction status
+  response_codes:
+    - code: 0
+      meaning: Success
+    - code: -1
+      meaning: Failure (includes msg and errorCode fields)
+    - code: 200
+      meaning: OK
+    - code: 400
+      meaning: Bad Request
+    - code: 401
+      meaning: Unauthorized
+    - code: 404
+      meaning: Not Found
+    - code: 50x
+      meaning: Server Error
+
+notes:
+  - Toss Payments does not publicly publish numeric rate limit thresholds (requests per second/minute).
+  - For rate limit details specific to your merchant agreement, contact techchat.tosspayments.com or support@tosspayments.com.

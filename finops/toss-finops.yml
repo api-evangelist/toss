@@ -1,0 +1,72 @@
+name: Toss FinOps
+description: Financial operations guidance for teams integrating Toss Payments APIs. Covers cost drivers, monitoring approaches, and optimization strategies for managing API-related spend within the Toss ecosystem.
+url: https://docs.tosspayments.com/en/overview
+
+cost_drivers:
+  - name: Per-Transaction Fees
+    description: The primary cost is a percentage-based fee on each successful payment, negotiated per merchant agreement. Payment method mix (card vs. virtual account vs. mobile) affects the blended rate.
+    type: variable
+    unit: per successful transaction
+
+  - name: International Card Surcharge
+    description: International brand fee of approximately 1% plus USD 0.50 per transaction for foreign card processing. Applied in addition to base transaction fee.
+    type: variable
+    unit: per international transaction
+
+  - name: Refund / Cancellation Costs
+    description: Full and partial refunds are supported via API. Depending on the merchant agreement, refunded transaction fees may or may not be returned. Confirm with Toss Payments account manager.
+    type: conditional
+
+  - name: Chargeback and Dispute Costs
+    description: Disputed transactions may incur chargeback fees. Toss Payments mediates disputes through their platform; fee structure is agreement-dependent.
+    type: conditional
+
+  - name: BrandPay and Payout Add-ons
+    description: White-label BrandPay and marketplace payout features are available under separate agreements with potentially different fee structures.
+    type: agreement-based
+
+optimization_strategies:
+  - name: Use Idempotency Keys
+    description: Always send Idempotency-Key headers on payment creation to prevent duplicate charges from network retries, avoiding unnecessary transaction fees.
+    impact: cost-avoidance
+
+  - name: Monitor Webhook Delivery
+    description: Ensure your webhook receiver returns HTTP 200 promptly. Failed webhooks retry up to 7 times (total ~5,461 minutes of retries). Missed deposit callbacks for virtual accounts can delay revenue recognition and require manual reconciliation.
+    impact: operational-efficiency
+
+  - name: Test in Sandbox First
+    description: Use test_sk / test_gsk keys in the sandbox environment (developers.tosspayments.com/sandbox) to validate integrations before incurring production transaction fees.
+    impact: cost-avoidance
+
+  - name: Minimize Failed Authorizations
+    description: Implement proper input validation and SDK v2 flows to reduce failed payment attempts. Failed authorizations still consume API calls and may affect merchant quality scores.
+    impact: cost-reduction
+
+  - name: Negotiate Volume-Based Rates
+    description: Toss Payments pricing is negotiated. Higher transaction volumes typically qualify for lower per-transaction rates. Review agreements periodically as volume grows.
+    impact: cost-reduction
+
+  - name: Track Payment Method Mix
+    description: Different payment methods carry different fee structures. Analyze transaction logs via the admin dashboard to understand method mix and model total cost of acceptance.
+    impact: cost-visibility
+
+monitoring:
+  - name: Toss Payments Status Page
+    url: https://status.tosspayments.com
+    description: Monitor real-time service health including payment processing, admin dashboard, payment window, and payout services. Uptime has been approximately 99.95% over 90 days.
+
+  - name: Admin Dashboard
+    url: https://developers.tosspayments.com
+    description: Transaction logs, payment status, test logs, and API key management. Use for reconciliation and detecting unexpected payment failures.
+
+  - name: Webhook Event Monitoring
+    description: Track PAYMENT_STATUS_CHANGED, CANCEL_STATUS_CHANGED, and payout.changed events to maintain real-time financial state without polling the API.
+
+  - name: Idempotency Key Tracking
+    description: Maintain a log of idempotency keys (valid 15 days) to audit duplicate request attempts and ensure accurate revenue accounting.
+
+support:
+  technical_chat: https://techchat.tosspayments.com
+  email: support@tosspayments.com
+  phone: "1544-7772"
+  discord: Available via Toss Payments developer center

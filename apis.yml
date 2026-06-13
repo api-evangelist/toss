@@ -1,0 +1,122 @@
+aid: toss
+name: Toss
+description: Toss is a Korean financial super-app operated by Viva Republica that provides REST APIs for payments, banking, credit scoring, identity verification, and financial services across the Toss ecosystem. The Toss Payments platform supports card payments, virtual accounts, mobile phone billing, bank transfers, and digital wallets including TossPay, KakaoPay, NaverPay, and SamsungPay, serving over 30 million registered users across South Korea.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/toss/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: '0.19'
+tags:
+  - Payments
+  - Fintech
+  - Banking
+  - Korea
+  - Digital Wallet
+  - Credit Scoring
+  - Identity Verification
+  - Financial Services
+  - Super App
+
+apis:
+
+  - name: Toss Payments API
+    description: REST API for processing payments, authorizations, cancellations, and refunds through the Toss Payments platform. Supports card, virtual account, mobile phone, bank transfer, and digital wallet payment methods for Korean and international merchants.
+    humanURL: https://docs.tosspayments.com/en/api-guide
+    baseURL: https://api.tosspayments.com
+    tags:
+      - Payments
+      - Card Payments
+      - Virtual Accounts
+      - Refunds
+      - Korea
+    properties:
+      - type: Documentation
+        url: https://docs.tosspayments.com/en/api-guide
+      - type: OpenAPI
+        url: https://docs.tosspayments.com/en/api-guide
+    contact:
+      - FN: Toss Payments Support
+        email: support@tosspayments.com
+        url: https://docs.tosspayments.com/en
+
+  - name: Toss Pay API
+    description: Legacy REST API for Toss Pay payment transactions, merchant approval flows, refunds, and payment status checks. Operates on the pay.toss.im domain with API key authentication.
+    humanURL: https://tossdev.github.io/api.html
+    baseURL: https://pay.toss.im/api/v2
+    tags:
+      - Payments
+      - Digital Wallet
+      - Korea
+    properties:
+      - type: Documentation
+        url: https://tossdev.github.io/api.html
+    contact:
+      - FN: Toss Developer Support
+        url: https://toss.im
+
+  - name: Toss Payments Webhooks
+    description: Event-driven webhook system for receiving real-time notifications on payment status changes, virtual account deposits, cancellations, BrandPay method updates, and marketplace payout results.
+    humanURL: https://docs.tosspayments.com/en/webhooks
+    baseURL: https://api.tosspayments.com
+    tags:
+      - Webhooks
+      - Payments
+      - Events
+    properties:
+      - type: Documentation
+        url: https://docs.tosspayments.com/en/webhooks
+
+  - name: Toss Payments Payouts API
+    description: API for marketplace and platform operators to disburse funds to registered sellers. Supports seller registration, payout requests, and event-driven payout status updates via webhooks.
+    humanURL: https://docs.tosspayments.com/en/integration-payouts
+    baseURL: https://api.tosspayments.com
+    tags:
+      - Payouts
+      - Marketplace
+      - Sellers
+      - Korea
+    properties:
+      - type: Documentation
+        url: https://docs.tosspayments.com/en/integration-payouts
+
+common:
+
+  - type: Website
+    url: https://toss.im
+
+  - type: Documentation
+    url: https://docs.tosspayments.com/en
+
+  - type: GitHubOrg
+    url: https://github.com/tosspayments
+
+  - type: GitHubOrg
+    url: https://github.com/toss
+
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/viva-republica
+
+  - type: Blog
+    url: https://toss.tech
+
+  - type: Pricing
+    url: https://docs.tosspayments.com/en/overview
+
+  - type: StatusPage
+    url: https://status.tosspayments.com
+
+  - type: X
+    url: https://x.com/toss_im
+
+  - type: Plans
+    url: plans/toss-plans-pricing.yml
+
+  - type: RateLimits
+    url: rate-limits/toss-rate-limits.yml
+
+  - type: FinOps
+    url: finops/toss-finops.yml
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
