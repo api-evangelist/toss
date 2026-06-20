@@ -1,7 +1,7 @@
 aid: toss
 name: Toss
 description: Toss is a Korean financial super-app operated by Viva Republica that provides REST APIs for payments, banking, credit scoring, identity verification, and financial services across the Toss ecosystem. The Toss Payments platform supports card payments, virtual accounts, mobile phone billing, bank transfers, and digital wallets including TossPay, KakaoPay, NaverPay, and SamsungPay, serving over 30 million registered users across South Korea.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/toss/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: 2026-06-13

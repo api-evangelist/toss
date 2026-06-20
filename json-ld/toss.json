@@ -4,7 +4,7 @@
   "name": "Toss (Viva Republica)",
   "alternateName": "Toss",
   "url": "https://toss.im",
-  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "logo": "https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg",
   "description": "Toss is a Korean financial super-app operated by Viva Republica that provides REST APIs for payments, banking, credit scoring, identity verification, and financial services across the Toss ecosystem, serving over 30 million registered users across South Korea.",
   "sameAs": [
     "https://github.com/tosspayments",
