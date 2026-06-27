@@ -1,59 +1,21 @@
 {
-  "aid": "toss",
+  "repo": "toss",
   "name": "Toss Tech Blog",
   "url": "https://toss.tech",
   "description": "Engineering blog from Toss (Viva Republica), covering topics in fintech, mobile, AI, and platform engineering.",
-  "rss": null,
-  "lastFetched": "2026-06-13",
-  "posts": [
-    {
-      "title": "\ube60\ub974\uac8c \uc6c0\uc9c1\uc774\ub294 \uc870\uc9c1\uc5d0\uc11c, TAM\uc740 \uc5b4\ub5bb\uac8c \ubb38\uc81c\ub97c \ud574\uacb0\ud560\uae4c?",
-      "titleEn": "How does TAM solve problems in fast-moving organizations?",
-      "url": "https://toss.tech/article/tam-connect-2025",
-      "author": "\uc1a1\ud61c\uc815",
-      "category": "Engineering",
-      "pubDate": null
-    },
-    {
-      "title": "\uc5bc\uad74 \uc778\uc2dd\uc758 \uc5ed\uc0ac\uc640 \ud398\uc774\uc2a4\ud398\uc774\uc758 \ubbf8\ub798",
-      "titleEn": "History of face recognition and the future of FacePay",
-      "url": "https://toss.tech/article/history-of-face-recognition-facepay",
-      "author": "\ud1a0\uc2a4 \ud398\uc774\uc2a4\ubaa8\ub378\ub9c1\ud300",
-      "category": "Engineering",
-      "pubDate": null
-    },
-    {
-      "title": "Skill \ud488\uc9c8 \uad00\ub9ac\ub97c \uc704\ud55c Rubric \uc124\uacc4\uc640 \uc2dc\uc2a4\ud15c \uad6c\ud604",
-      "titleEn": "Rubric design and system implementation for Skill quality management",
-      "url": "https://toss.tech/article/skill-quality-rubric",
-      "author": "\uc870\ubbfc\uaddc",
-      "category": "Engineering",
-      "pubDate": null
-    },
-    {
-      "title": "\ud1a0\uc2a4\ud300\uc774 AI \ud30c\ub3c4\ub97c \ub9c8\uc8fc\ud558\ub294 \ubc29\ubc95: AI Surf Day",
-      "titleEn": "How the Toss team faces the AI wave: AI Surf Day",
-      "url": "https://toss.tech/article/ai-surf-day",
-      "author": "\uc2e0\uc720\ub77c",
-      "category": "Engineering",
-      "pubDate": null
-    },
-    {
-      "title": "Cross Functional \uae30\uc220 \ubb38\uc81c \ud480\uae30 \uc704\ud55c \uc5ed\ub7c9 \uc131\uc7a5 Tip",
-      "titleEn": "Skills for solving cross-functional technical problems",
-      "url": "https://toss.tech/article/cross-functional-tpm-tip",
-      "author": "\uc774\uc758\ucca0",
-      "category": "Engineering",
-      "pubDate": null
-    }
-  ],
-  "repo": "toss",
   "feeds": [
+    {
+      "source": "https://toss.tech/rss.xml",
+      "feed_url": "https://toss.tech/rss.xml",
+      "title": "",
+      "saved": 7,
+      "method": "feed"
+    },
     {
       "source": "https://www.linkedin.com/company/viva-republica",
       "error": "HTTPError"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 12
 }
