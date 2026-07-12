@@ -81,6 +81,8 @@ apis:
 
 common:
 
+  - type: DomainSecurity
+    url: security/toss-domain-security.yml
   - type: Website
     url: https://toss.im
 
