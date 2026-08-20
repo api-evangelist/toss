@@ -26,6 +26,16 @@ tags:
   - Digital Wallet
   - Credit Scoring
   - Identity Verification
+  - Financial-Services
+  - Super App
+tags_raw:
+  - Payments
+  - Fintech
+  - Banking
+  - Korea
+  - Digital Wallet
+  - Credit Scoring
+  - Identity Verification
   - Financial Services
   - Super App
 
@@ -71,6 +81,10 @@ apis:
     humanURL: https://docs.tosspayments.com/en/webhooks
     baseURL: https://api.tosspayments.com
     tags:
+      - Webhook
+      - Payments
+      - Event
+    tags_raw:
       - Webhooks
       - Payments
       - Events
