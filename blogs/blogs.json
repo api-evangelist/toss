@@ -5,23 +5,21 @@
   "description": "Engineering blog from Toss (Viva Republica), covering topics in fintech, mobile, AI, and platform engineering.",
   "feeds": [
     {
-      "source": "https://toss.tech/rss.xml",
-      "feed_url": "https://toss.tech/rss.xml",
-      "title": "",
-      "saved": 0,
-      "method": "feed",
-      "nature": "undetermined",
-      "nature_basis": null
-    },
-    {
       "source": "https://www.linkedin.com/company/viva-republica",
       "feed_url": "https://www.linkedin.com/company/viva-republica",
       "title": "",
       "saved": 0,
       "method": "none"
+    },
+    {
+      "source": "https://toss.tech/rss.xml",
+      "feed_url": "https://toss.tech/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "fetched": "2026-08-30T22:33:40Z",
+  "fetched": "2026-09-06T19:17:18Z",
   "post_count": 24,
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
