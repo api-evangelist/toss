@@ -33,7 +33,7 @@ tags:
   - Payments
   - Fintech
   - Banking
-  - Korea
+  - South Korea
   - Digital Wallet
   - Credit Scoring
   - Identity Verification
@@ -61,6 +61,12 @@ apis:
       - Card Payments
       - Virtual Accounts
       - Refunds
+      - South Korea
+    tags_raw:
+      - Payments
+      - Card Payments
+      - Virtual Accounts
+      - Refunds
       - Korea
     properties:
       - type: Documentation
@@ -77,6 +83,10 @@ apis:
     humanURL: https://tossdev.github.io/api.html
     baseURL: https://pay.toss.im/api/v2
     tags:
+      - Payments
+      - Digital Wallet
+      - South Korea
+    tags_raw:
       - Payments
       - Digital Wallet
       - Korea
@@ -108,6 +118,11 @@ apis:
     humanURL: https://docs.tosspayments.com/en/integration-payouts
     baseURL: https://api.tosspayments.com
     tags:
+      - Payouts
+      - Marketplace
+      - Sellers
+      - South Korea
+    tags_raw:
       - Payouts
       - Marketplace
       - Sellers
