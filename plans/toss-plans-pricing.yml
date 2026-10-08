@@ -54,3 +54,27 @@ plans:
 notes:
   - Toss Payments pricing is not publicly listed; merchants must register at developers.tosspayments.com and complete a business verification to receive a rate card.
   - The consumer-facing Toss app (toss.im) uses a separate commercial model from Toss Payments merchant APIs.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Merchant Agreement (Standard)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: BrandPay Add-on
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Payouts (Seller Disbursement)
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
